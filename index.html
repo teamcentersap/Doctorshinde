@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Dr. Tapre — specialist physician offering attentive consultation, diagnosis, and long-term care guidance."
+    />
+    <title>Dr. Tapre · Specialist Physician</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,650;12..96,800&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="wordmark" href="#top" aria-label="Dr. Tapre home">Dr. Tapre</a>
+        <nav class="nav" aria-label="Primary">
+          <a href="#specialty">Specialty</a>
+          <a href="#approach">Approach</a>
+          <a href="#visit">Visit</a>
+          <a class="nav__cta" href="#book">Book</a>
+        </nav>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-nav"
+          aria-label="Open menu"
+        >
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <nav id="mobile-nav" class="mobile-nav" hidden>
+        <a href="#specialty">Specialty</a>
+        <a href="#approach">Approach</a>
+        <a href="#visit">Visit</a>
+        <a href="#book">Book a consultation</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section id="top" class="hero" aria-label="Introduction">
+        <div class="hero__media" aria-hidden="true">
+          <img
+            class="hero__image"
+            src="assets/hero.jpg"
+            alt=""
+            width="2400"
+            height="1600"
+            fetchpriority="high"
+          />
+          <div class="hero__veil"></div>
+        </div>
+        <div class="hero__content">
+          <p class="hero__brand">Dr. Tapre</p>
+          <h1>Specialist care shaped around your health story.</h1>
+          <p class="hero__lede">
+            Clear diagnosis, thoughtful treatment plans, and follow-up that stays with you.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#book">Book consultation</a>
+            <a class="btn btn--ghost" href="#specialty">View specialty</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="specialty" class="section specialty reveal">
+        <div class="section__inner">
+          <p class="eyebrow">Specialty</p>
+          <h2>Internal medicine with focused specialist consultation.</h2>
+          <p class="section__lead">
+            Dr. Tapre helps adults navigate complex symptoms, chronic conditions, and preventive care—
+            with time to listen and clarity in every next step.
+          </p>
+          <ul class="specialty-list">
+            <li>
+              <strong>Diagnostic clarity</strong>
+              <span>Careful history, examination, and investigation planning without rush.</span>
+            </li>
+            <li>
+              <strong>Chronic care guidance</strong>
+              <span>Steady management for diabetes, hypertension, thyroid, and lifestyle illness.</span>
+            </li>
+            <li>
+              <strong>Second opinions</strong>
+              <span>Independent review when you need confidence before a major decision.</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="approach" class="section approach reveal">
+        <div class="section__inner approach__grid">
+          <div class="approach__copy">
+            <p class="eyebrow">Approach</p>
+            <h2>Medicine that explains as carefully as it treats.</h2>
+            <p>
+              Every visit begins with your concerns—not a checklist. Plans are written in plain language,
+              so you leave knowing what matters now, what can wait, and how to reach support between visits.
+            </p>
+          </div>
+          <figure class="approach__figure">
+            <img
+              src="assets/approach.jpg"
+              alt="Specialist consultation in a calm clinic setting"
+              width="1600"
+              height="1200"
+              loading="lazy"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <section id="visit" class="section visit reveal">
+        <div class="section__inner">
+          <p class="eyebrow">Clinic visit</p>
+          <h2>When and where to meet Dr. Tapre.</h2>
+          <div class="visit__rows">
+            <div class="visit__row">
+              <h3>Consultation hours</h3>
+              <p>Mon–Sat · 10:00 am – 1:00 pm &amp; 5:00 pm – 8:00 pm</p>
+            </div>
+            <div class="visit__row">
+              <h3>Clinic</h3>
+              <p>Tapre Specialty Clinic · Ground Floor, Wellness Arcade, Pune</p>
+            </div>
+            <div class="visit__row">
+              <h3>Appointments</h3>
+              <p>Walk-ins welcome when slots allow · Prefer booking ahead for reviews</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="book" class="section book reveal">
+        <div class="section__inner book__panel">
+          <p class="eyebrow">Book</p>
+          <h2>Ready for a specialist consultation?</h2>
+          <p class="section__lead">
+            Share your preferred time and a brief note about your concern. The clinic team will confirm
+            your appointment shortly.
+          </p>
+          <form class="book-form" action="#" method="post">
+            <label>
+              Full name
+              <input type="text" name="name" autocomplete="name" required placeholder="Your name" />
+            </label>
+            <label>
+              Phone
+              <input
+                type="tel"
+                name="phone"
+                autocomplete="tel"
+                required
+                placeholder="+91"
+                inputmode="tel"
+              />
+            </label>
+            <label class="book-form__full">
+              Preferred day or time
+              <input type="text" name="when" placeholder="e.g. Thursday evening" />
+            </label>
+            <label class="book-form__full">
+              Brief concern
+              <textarea name="concern" rows="3" placeholder="A short note helps prepare for your visit"></textarea>
+            </label>
+            <button class="btn btn--primary" type="submit">Request appointment</button>
+          </form>
+          <p class="book__alt">
+            Or call
+            <a href="tel:+919876543210">+91 98765 43210</a>
+          </p>
+          <p class="form-note" role="status" aria-live="polite" hidden></p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <p class="site-footer__brand">Dr. Tapre</p>
+        <p>Specialist physician · Attentive consultation &amp; continuing care</p>
+        <p class="site-footer__fine">© <span id="year"></span> Dr. Tapre. For clinical emergencies, visit the nearest hospital.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
